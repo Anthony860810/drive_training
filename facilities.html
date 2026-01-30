@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>場地設施 - 同安駕訓班</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .gallery-caption {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <img src="LOGO.jpg" alt="同安駕訓班" style="height: 50px; width: auto; margin-right: 10px;">
+                <span>同安</span>駕訓班
+            </a>
+            <button class="mobile-toggle">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">首頁</a></li>
+                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link active">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
+                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title">優質場地與設備</h1>
+
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+            我們提供良好的學習環境與保養良好的教練車，讓您在安全、舒適的環境中掌握駕駛技術。
+        </p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="overview.gif" alt="寬敞教練場" class="gallery-img">
+                <div class="gallery-caption">寬敞教練場</div>
+            </div>
+            <div class="gallery-item">
+                <img src="car.jpg" alt="TOYOTA 教練車" class="gallery-img">
+                <div class="gallery-caption">TOYOTA 教練車</div>
+            </div>
+            <div class="gallery-item">
+                <img src="S.jpg" alt="S型彎道練習" class="gallery-img">
+                <div class="gallery-caption">S型彎道練習區</div>
+            </div>
+            <div class="gallery-item">
+                <img src="firsttest.jpg" alt="標準考場" class="gallery-img">
+                <div class="gallery-caption">國家標準考場</div>
+            </div>
+            <div class="gallery-item">
+                <img src="cararch.jpg" alt="汽構教室" class="gallery-img">
+                <div class="gallery-caption">汽構教室</div>
+            </div>
+            <div class="gallery-item">
+                <img src="ruleroom.jpg" alt="法規教室" class="gallery-img">
+                <div class="gallery-caption">法規教室</div>
+            </div>
+            <div class="gallery-item">
+                <img src="monitorcapture.jpg" alt="教學監控系統" class="gallery-img">
+                <div class="gallery-caption">教學監控系統</div>
+            </div>
+            <div class="gallery-item">
+                <img src="synctest.jpg" alt="監理所同步測驗系統" class="gallery-img">
+                <div class="gallery-caption">監理所同步測驗系統</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>高雄縣私立同安汽車駕駛人訓練班</h3>
+                <p>電話：(07) 626-7678</p>
+                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+            </div>
+            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
