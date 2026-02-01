@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相關資源 - 同安駕訓班 | 交通安全 監理服務</title>
+    <meta name="description" content="筆試測驗平台。">
+    <meta name="keywords" content="交通安全, 監理服務, 危險感知, 駕訓班資源">
+    <link rel="canonical" href="http://www.tungann-driving-school.com.tw/resources.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.tungann-driving-school.com.tw/resources.html">
+    <meta property="og:title" content="相關資源 - 同安駕訓班">
+    <meta property="og:description" content="瀏覽同安駕訓班整理的交通安全相關資源。">
+    <meta property="og:image" content="http://www.tungann-driving-school.com.tw/images/LOGO.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .resource-list {
+            display: grid;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid var(--primary-green);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-card h3 {
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .resource-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .resource-link {
+            display: inline-block;
+            color: var(--primary-orange);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <img src="images/LOGO.jpg" alt="同安駕訓班" style="height: 50px; width: auto; margin-right: 10px;">
+                <span>同安</span>駕訓班
+            </a>
+            <button class="mobile-toggle">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">首頁</a></li>
+                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link active">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title">相關資源</h1>
+
+        <div class="resource-list">
+            <!-- Resource 1 -->
+            <div class="resource-card">
+                <h3>筆試練習平台</h3>
+                <p>提供汽機車筆試練習的平台。</p>
+                <a href="https://www.mvdis.gov.tw/v2/m3-simulator-drv/index" target="_blank" class="resource-link">
+                    前往網站 <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <!-- Resource 2 -->
+            <div class="resource-card" style="border-left-color: var(--primary-orange);">
+                <h3>交通部公路局 - 筆試題庫</h3>
+                <p>提供豐富的交通安全宣導資訊、法規查詢與駕駛安全教材。</p>
+                <a href="https://www.thb.gov.tw/cl.aspx?n=12" target="_blank" class="resource-link">
+                    前往網站 <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
+                <p>立案字號:駕訓班換字第00710號</p>
+                <p>電話：(07) 626-7678</p>
+                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+            </div>
+            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
