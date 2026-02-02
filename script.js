@@ -12,22 +12,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Hero Text Rotation Logic
     const heroContent = document.querySelector('.hero p#hero-slogan');
     const heroDots = document.querySelectorAll('.hero .dot');
+    let sloganTimer; // Define outside to be accessible
+
     if (heroContent) {
-        const slogans = [
+        const slogans_zh = [
             "<span style='font-size: 1.5em;'>原地</span>考照・<span style='font-size: 1.5em;'>專業</span>師資・<span style='font-size: 1.5em;'>TOYOTA</span>教練車",
             "最近<span style='font-size: 1.5em;'>岡山</span>市區・<span style='font-size: 1.5em;'>鄉親</span>第一選擇",
             "學車考照到<span style='font-size: 1.5em;'>同安</span>・事事順利皆<span style='font-size: 1.5em;'>平安</span>"
         ];
+        // For English, we just want static text, but we can have an array of 1 if we wanted.
+        // But the requirement is to stop rotation.
+
         let currentSlogan = 0;
-        let sloganTimer;
 
         const updateHero = (index) => {
+            // Only rotate if language is Chinese
+            const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
+            if (currentLang !== 'zh') return;
+
             currentSlogan = index;
 
             // Update Text
             heroContent.style.opacity = 0;
             setTimeout(() => {
-                heroContent.innerHTML = slogans[currentSlogan];
+                heroContent.innerHTML = slogans_zh[currentSlogan];
                 heroContent.style.opacity = 1;
             }, 300);
 
@@ -44,7 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const nextSlogan = () => {
-            updateHero((currentSlogan + 1) % slogans.length);
+            const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
+            if (currentLang === 'zh') {
+                updateHero((currentSlogan + 1) % slogans_zh.length);
+            }
         };
 
         const startSloganTimer = () => {
@@ -52,14 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
             sloganTimer = setInterval(nextSlogan, 4000);
         };
 
+        // Start timer initially
         startSloganTimer();
 
         // Dot Interaction
         heroDots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                clearInterval(sloganTimer);
-                updateHero(index);
-                startSloganTimer();
+                const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
+                if (currentLang === 'zh') {
+                    clearInterval(sloganTimer);
+                    updateHero(index);
+                    startSloganTimer();
+                }
             });
         });
     }
@@ -175,9 +190,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Activities Carousel
     initCarousel(document.querySelector('.activities-carousel'), 4000);
-    // 5. Language Switcher Logic
+    // 5. Language Switcher Logic (Dropdown Replacement)
     const langBtn = document.getElementById('lang-switch');
-    if (langBtn && typeof translations !== 'undefined') {
+
+    // Function to create dropdown
+    const createLangDropdown = (currentLang) => {
+        if (!langBtn) return;
+
+        // Create Select Element
+        const select = document.createElement('select');
+        select.id = 'lang-select';
+        select.className = 'lang-select'; // We will style this class
+
+        const options = [
+            { value: 'zh', text: '繁體中文' },
+            { value: 'en', text: 'English' },
+            { value: 'vi', text: 'Tiếng Việt' },
+            { value: 'th', text: 'ไทย' }
+        ];
+
+        options.forEach(opt => {
+            const option = document.createElement('option');
+            option.value = opt.value;
+            option.text = opt.text;
+            if (opt.value === currentLang) option.selected = true;
+            select.appendChild(option);
+        });
+
+        // Replace Button with Select
+        langBtn.parentNode.replaceChild(select, langBtn);
+
+        return select;
+    };
+
+    if (typeof translations !== 'undefined') {
         const setLanguage = (lang) => {
             const strings = translations[lang];
             if (!strings) return;
@@ -190,24 +236,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Update Button Text
-            langBtn.textContent = strings['btn.lang_switch'];
-
             // Save Preference
             localStorage.setItem('preferredLanguage', lang);
-            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-TW';
+            document.documentElement.lang = lang;
+
+            // Logic to handle rotation visibility/state
+            const heroDots = document.querySelectorAll('.hero .dot');
+            const heroContent = document.querySelector('.hero p#hero-slogan');
+
+            if (lang !== 'zh') {
+                // Stop rotation and hide dots for non-Chinese
+                if (heroDots) heroDots.forEach(d => d.style.display = 'none');
+            } else {
+                // Restart rotation and show dots for Chinese
+                if (heroDots) heroDots.forEach(d => d.style.display = 'inline-block');
+            }
         };
 
         // Initialize Language
         const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
         setLanguage(savedLang);
 
-        // Toggle Event
-        langBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
-            const newLang = currentLang === 'zh' ? 'en' : 'zh';
-            setLanguage(newLang);
-        });
+        // Initialize Dropdown
+        // Note: We check if button exists because on subsequent loads it might be replaced? 
+        // Actually DOMContentLoaded runs once, but we need to find the element again if we replaced it?
+        // No, we replace it once on load.
+
+        const langSelect = createLangDropdown(savedLang);
+
+        if (langSelect) {
+            langSelect.addEventListener('change', (e) => {
+                setLanguage(e.target.value);
+            });
+        }
     }
 });

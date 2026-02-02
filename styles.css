@@ -139,7 +139,7 @@ img {
 }
 
 /* Language Switcher */
-.lang-switch {
+.lang-select {
   background: none;
   border: 1px solid var(--primary-orange);
   color: var(--primary-orange);
@@ -149,20 +149,34 @@ img {
   font-weight: 500;
   margin-left: var(--spacing-md);
   transition: all 0.2s;
+  appearance: none;
+  /* Remove default arrow */
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ff8c00%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+  padding-right: 2rem;
+  font-size: 1rem;
 }
 
-.lang-switch:hover {
-  background-color: var(--primary-orange);
-  color: white;
+.lang-select:hover {
+  background-color: rgba(255, 140, 0, 0.1);
+}
+
+.lang-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .lang-switch {
+  .lang-select {
     display: block;
     width: 100%;
     margin: var(--spacing-md) 0 0 0;
     text-align: center;
+    background-position: right 1rem top 50%;
   }
 }
 
@@ -548,4 +562,30 @@ img {
 .dot.active,
 .dot:hover {
   background-color: var(--primary-orange);
+}
+
+/* --- English Specific Overrides --- */
+html[lang="en"] .nav-link {
+  font-size: 0.9rem;
+  /* Slightly smaller font for nav */
+  padding: 0.5rem 0.3rem;
+  /* Reduce padding */
+}
+
+html[lang="en"] .hero h1 {
+  font-size: 2.5rem;
+  /* Smaller hero title for English */
+}
+
+/* Ensure footer address wraps properly in English */
+html[lang="en"] .footer-info p {
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  html[lang="en"] .hero h1 {
+    font-size: 1.8rem;
+    /* Even smaller for mobile */
+  }
 }
