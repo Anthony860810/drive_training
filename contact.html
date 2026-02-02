@@ -84,23 +84,24 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link active">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">聯絡我們</h1>
+        <h1 class="section-title" data-i18n="contact.title">聯絡我們</h1>
 
         <div class="contact-grid">
 
@@ -108,16 +109,16 @@
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
                     <div>
-                        <h3>駕訓班地址</h3>
+                        <h3 data-i18n="contact.addr_title">駕訓班地址</h3>
                         <p>高雄市岡山區致遠路88號</p>
-                        <p style="color: #666; font-size: 0.9em;">(空軍官校後方)</p>
+                        <p style="color: #666; font-size: 0.9em;" data-i18n="contact.addr_note">(空軍官校後方)</p>
                     </div>
                 </div>
 
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
                     <div>
-                        <h3>聯絡電話</h3>
+                        <h3 data-i18n="contact.phone_title">聯絡電話</h3>
                         <p>(07) 626-7678</p>
                     </div>
                 </div>
@@ -125,9 +126,9 @@
                 <div class="contact-item">
                     <div class="contact-icon">⏰</div>
                     <div>
-                        <h3>服務時間</h3>
-                        <p>週一至週五：06:00 - 20:30</p>
-                        <p>週六至週日：請來電洽詢</p>
+                        <h3 data-i18n="contact.hours_title">服務時間</h3>
+                        <p data-i18n="contact.hours_weekdays">週一至週五：06:00 - 20:30</p>
+                        <p data-i18n="contact.hours_weekend">週六至週日：請來電洽詢</p>
                     </div>
                 </div>
 
@@ -141,8 +142,10 @@
 
             <div
                 style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; justify-content: center;">
-                <h3 style="color: var(--primary-green); margin-bottom: 1rem;">歡迎洽詢</h3>
-                <p style="margin-bottom: 1.5rem; line-height: 1.6;">目前尚無提供線上報名與留言功能。<br>如有考照需求或課程疑問，<br>歡迎直接致電或親洽本班櫃檯。
+                <h3 style="color: var(--primary-green); margin-bottom: 1rem; font-size: 1.5em;"
+                    data-i18n="contact.welcome_title">歡迎洽詢</h3>
+                <p style="margin-bottom: 1.5rem; line-height: 1.6;" data-i18n="contact.welcome_desc">
+                    目前尚無提供線上報名與留言功能。<br>如有考照需求或課程疑問，<br>歡迎直接致電或親洽本班櫃檯。
                 </p>
                 <div style="font-size: 1.25rem; font-weight: bold; color: var(--accent-blue);">
                     📞 (07) 626-7678
@@ -155,15 +158,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

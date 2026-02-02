@@ -80,17 +80,18 @@
             <button class="mobile-toggle" aria-label="切換選單">
                 ☰
             </button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
 
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
@@ -105,14 +106,14 @@
         <div class="container hero-content">
             <img src="images/LOGO.png" alt="同安駕訓班 Logo"
                 style="display: block; margin: 0 auto 20px auto; max-width: 150px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));">
-            <h1>同安駕訓班</h1>
-            <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #ddd;">手排/自排普通小客車</p>
-            <p id="hero-slogan"><span style='font-size: 1.5em;'>原地</span>考照・<span
-                    style='font-size: 1.5em;'>專業</span>師資・<span style='font-size: 1.5em;'>TOYOTA</span>教練車</p>
+            <h1 data-i18n="home.hero_title">同安駕訓班</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 1rem; color: #ddd;" data-i18n="home.hero_subtitle">手排/自排普通小客車
+            </p>
+            <p id="hero-slogan" data-i18n="home.hero_slogan">最近岡山市區・鄉親第一選擇</p>
             <div class="cta-group">
-                <a href="info.html" class="btn btn-primary">報名資訊</a>
-                <a href="contact.html" class="btn"
-                    style="background: rgba(255,255,255,0.2); margin-left: 10px;">了解更多</a>
+                <a href="info.html" class="btn btn-primary" data-i18n="home.btn_info">報名資訊</a>
+                <a href="contact.html" class="btn" style="background: rgba(255,255,255,0.2); margin-left: 10px;"
+                    data-i18n="home.btn_more">了解更多</a>
             </div>
 
             <div class="hero-dots" style="display: flex; justify-content: center; margin-top: 20px; gap: 10px;">
@@ -128,46 +129,45 @@
 
         <!-- Announcements -->
         <div class="notice-board">
-            <div class="notice-title">📢 最新公告</div>
-            <p>歡迎光臨同安駕訓班！我們提供最完善的教學環境與師資。現正熱烈招生中！報名專線：(07) 626-7678！
-
+            <div class="notice-title" data-i18n="home.notice_title">📢 最新公告</div>
+            <p data-i18n="home.notice_content">歡迎光臨同安駕訓班！我們提供最完善的教學環境與師資。現正熱烈招生中！報名專線：(07) 626-7678！
             </p>
         </div>
 
-        <h2 class="section-title">為什麼選擇我們？</h2>
+        <h2 class="section-title" data-i18n="home.why_choose_us">為什麼選擇我們？</h2>
 
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon" style="padding: 0; overflow: hidden;"><img src="images/特優.gif" alt="評鑑特優獎"
                         style="width: 100%; height: 100%; object-fit: cover;"></div>
-                <h3 class="feature-title">評鑑特優獎</h3>
-                <p>榮獲監理單位評鑑特優獎肯定，辦學績效卓越，是您學車的最佳選擇。</p>
+                <h3 class="feature-title" data-i18n="home.feature1_title">評鑑特優獎</h3>
+                <p data-i18n="home.feature1_desc">榮獲監理單位評鑑特優獎肯定，辦學績效卓越，是您學車的最佳選擇。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon" style="padding: 0; overflow: hidden;"><img src="images/cars.jpg"
                         alt="TOYOTA 教練車" style="width: 100%; height: 100%; object-fit: cover;"></div>
-                <h3 class="feature-title">TOYOTA 教練車</h3>
-                <p>全班採用 TOYOTA 訓練車，車況良好，冷氣開放，學習環境舒適。</p>
+                <h3 class="feature-title" data-i18n="home.feature2_title">TOYOTA 教練車</h3>
+                <p data-i18n="home.feature2_desc">全班採用 TOYOTA 訓練車，車況良好，冷氣開放，學習環境舒適。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon" style="padding: 0; overflow: hidden;"><img src="images/大門.jpg" alt="原地考照"
                         style="width: 100%; height: 100%; object-fit: cover;"></div>
-                <h3 class="feature-title">原地考照</h3>
-                <p>原車原場地考照，熟悉環境更能發揮實力，考照率平均90以上。</p>
+                <h3 class="feature-title" data-i18n="home.feature3_title">原地考照</h3>
+                <p data-i18n="home.feature3_desc">原車原場地考照，熟悉環境更能發揮實力，考照率平均90以上。</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon" style="padding: 0; overflow: hidden;"><img src="images/公園1.jpg" alt="公園化場地"
                         style="width: 100%; height: 100%; object-fit: cover;"></div>
-                <h3 class="feature-title">公園化場地</h3>
-                <p>佔地寬廣，庭園造景，環境優美，讓您在輕鬆的心情下快樂學習。</p>
+                <h3 class="feature-title" data-i18n="home.feature4_title">公園化場地</h3>
+                <p data-i18n="home.feature4_desc">佔地寬廣，庭園造景，環境優美，讓您在輕鬆的心情下快樂學習。</p>
             </div>
         </div>
 
-        <p
-            style="text-align: center; font-size: 1.25rem; font-weight: bold; color: var(--primary-orange); margin-top: 2rem;">
+        <p style="text-align: center; font-size: 2.5rem; font-weight: bold; color: var(--primary-orange); margin-top: 2rem;"
+            data-i18n="home.success_rate">
             👍 學車考照效果百分百
         </p>
     </main>
@@ -176,17 +176,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">
+            <div class="copyright" data-i18n="footer.copyright">
                 &copy; 2026 同安駕訓班 All Rights Reserved.
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

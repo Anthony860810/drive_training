@@ -62,25 +62,26 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link active">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link active" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">活動花絮</h1>
+        <h1 class="section-title" data-i18n="activities.title">活動花絮</h1>
 
-        <h2 class="section-title" style="margin-top: 2rem;">社區服務</h2>
+        <h2 class="section-title" style="margin-top: 2rem;" data-i18n="activities.community_title">社區服務</h2>
         <!-- Activity Carousel -->
         <div class="activities-carousel">
             <div class="carousel-slides">
@@ -105,8 +106,8 @@
             </div>
         </div>
 
-        <p
-            style="text-align: center; font-size: 1.25rem; font-weight: bold; color: var(--accent-blue); margin-top: 1rem;">
+        <p style="text-align: center; font-size: 1.25rem; font-weight: bold; color: var(--accent-blue); margin-top: 1rem;"
+            data-i18n="activities.community_desc">
             向日葵幼稚園交通安全週戶外教學
         </p>
     </main>
@@ -114,15 +115,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

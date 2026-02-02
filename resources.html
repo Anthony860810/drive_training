@@ -73,39 +73,42 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link active">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link active" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">相關資源</h1>
+        <h1 class="section-title" data-i18n="resources.title">相關資源</h1>
 
         <div class="resource-list">
             <!-- Resource 1 -->
             <div class="resource-card">
-                <h3>筆試練習平台</h3>
-                <p>提供汽機車筆試練習的平台。</p>
-                <a href="https://www.mvdis.gov.tw/v2/m3-simulator-drv/index" target="_blank" class="resource-link">
+                <h3 data-i18n="resources.item1_title">筆試練習平台</h3>
+                <p data-i18n="resources.item1_desc">提供汽機車筆試練習的平台。</p>
+                <a href="https://www.mvdis.gov.tw/v2/m3-simulator-drv/index" target="_blank" class="resource-link"
+                    data-i18n="resources.btn_visit">
                     前往網站 <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
 
             <!-- Resource 2 -->
             <div class="resource-card" style="border-left-color: var(--primary-orange);">
-                <h3>交通部公路局 - 筆試題庫</h3>
-                <p>提供豐富的交通安全宣導資訊、法規查詢與駕駛安全教材。</p>
-                <a href="https://www.thb.gov.tw/cl.aspx?n=12" target="_blank" class="resource-link">
+                <h3 data-i18n="resources.item2_title">交通部公路局 - 筆試題庫</h3>
+                <p data-i18n="resources.item2_desc">提供豐富的交通安全宣導資訊、法規查詢與駕駛安全教材。</p>
+                <a href="https://www.thb.gov.tw/cl.aspx?n=12" target="_blank" class="resource-link"
+                    data-i18n="resources.btn_visit">
                     前往網站 <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
@@ -115,15 +118,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>

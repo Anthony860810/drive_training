@@ -28,34 +28,37 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link active">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link active" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">關於同安駕訓班</h1>
+        <h1 class="section-title" data-i18n="about.title">關於同安駕訓班</h1>
 
         <div class="content-block"
             style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 3rem;">
-            <h3 style="font-size: 1.6rem;">歷史沿革</h3>
-            <p>同安駕訓班成立於民國93年（2004年），多年來致力於提供高品質的駕駛訓練課程。並於102年1月24日自費成為全台唯二，南部首家四合一式核發道路考照合格之駕訓班。</p>
+            <h3 style="font-size: 1.6rem;" data-i18n="about.history_title">歷史沿革</h3>
+            <p data-i18n="about.history_content">
+                同安駕訓班成立於民國93年（2004年），多年來致力於提供高品質的駕駛訓練課程。並於102年1月24日自費成為全台唯二，南部首家四合一式核發道路考照合格之駕訓班。</p>
             <br>
-            <h3 style="font-size: 1.6rem;">我們堅持</h3>
+            <h3 style="font-size: 1.6rem;" data-i18n="about.values_title">我們堅持</h3>
             <ol style="margin-left: 20px;">
-                <li>「<span style="font-size: 1.25em;">安全第一、教學認真</span>」的理念，協助無數學員順利考取駕照，並具備安全防衛駕駛的觀念。
+                <li data-i18n="about.value1">「<span
+                        style="font-size: 1.25em;">安全第一、教學認真</span>」的理念，協助無數學員順利考取駕照，並具備安全防衛駕駛的觀念。
                 </li>
-                <li>以創新思維及回饋社會之熱忱，致力於培訓交通安全的優良駕駛人。</li>
+                <li data-i18n="about.value2">以創新思維及回饋社會之熱忱，致力於培訓交通安全的優良駕駛人。</li>
             </ol>
 
 
@@ -78,20 +81,25 @@
             </div>
         </div>
 
-        <h2 class="section-title">地理位置</h2>
+        <h2 class="section-title" data-i18n="about.location_title">地理位置</h2>
         <div class="content-block"
             style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
             <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
                 <div style="flex: 1; min-width: 300px;">
-                    <h3>交通資訊</h3>
-                    <p style="margin-bottom: 1rem;">我們的訓練場地位於空軍官校後方，環境清幽，遠離塵囂，是學習駕駛的最佳場所。</p>
+                    <h3 data-i18n="about.transport_title">交通資訊</h3>
+                    <p style="margin-bottom: 1rem;" data-i18n="about.transport_desc">
+                        我們的訓練場地位於空軍官校後方，環境清幽，遠離塵囂，是學習駕駛的最佳場所。</p>
                     <ul style="list-style: none; margin-top: 1rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>地址：</strong>高雄市岡山區致遠路88號</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>地標：</strong>空軍官校後方</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>電話：</strong>(07) 626-7678</li>
+                        <li style="margin-bottom: 0.5rem;"><strong data-i18n="about.addr_label">地址：</strong><span
+                                data-i18n="about.addr_value">高雄市岡山區致遠路88號</span></li>
+                        <li style="margin-bottom: 0.5rem;"><strong data-i18n="about.landmark_label">地標：</strong><span
+                                data-i18n="about.landmark_value">空軍官校後方</span></li>
+                        <li style="margin-bottom: 0.5rem;"><strong data-i18n="about.phone_label">電話：</strong>(07)
+                            626-7678</li>
                     </ul>
                     <div style="margin-top: 2rem;">
-                        <a href="https://maps.google.com/?q=高雄市岡山區致遠路88號" target="_blank" class="btn btn-primary">在
+                        <a href="https://maps.google.com/?q=高雄市岡山區致遠路88號" target="_blank" class="btn btn-primary"
+                            data-i18n="about.btn_map">在
                             Google Maps 開啟</a>
                     </div>
                 </div>
@@ -109,15 +117,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -175,4 +175,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Activities Carousel
     initCarousel(document.querySelector('.activities-carousel'), 4000);
+    // 5. Language Switcher Logic
+    const langBtn = document.getElementById('lang-switch');
+    if (langBtn && typeof translations !== 'undefined') {
+        const setLanguage = (lang) => {
+            const strings = translations[lang];
+            if (!strings) return;
+
+            // Update DOM Elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (strings[key]) {
+                    el.innerHTML = strings[key];
+                }
+            });
+
+            // Update Button Text
+            langBtn.textContent = strings['btn.lang_switch'];
+
+            // Save Preference
+            localStorage.setItem('preferredLanguage', lang);
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-TW';
+        };
+
+        // Initialize Language
+        const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+        setLanguage(savedLang);
+
+        // Toggle Event
+        langBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
+            const newLang = currentLang === 'zh' ? 'en' : 'zh';
+            setLanguage(newLang);
+        });
+    }
 });

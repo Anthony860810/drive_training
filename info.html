@@ -68,77 +68,84 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link active">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link active" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">報名與學員須知</h1>
+        <h1 class="section-title" data-i18n="info.title">報名與學員須知</h1>
 
         <div class="info-card">
-            <h2>📝 考照資格</h2>
+            <h2 data-i18n="info.qual_title">📝 考照資格</h2>
             <ul class="requirement-list">
-                <li>18歲以上。</li>
-                <li>學歷不限，戶籍不限，不識字者可口試。</li>
+                <li data-i18n="info.qual_1">18歲以上。</li>
+                <li data-i18n="info.qual_2">學歷不限，戶籍不限，不識字者可口試。</li>
             </ul>
         </div>
 
         <div class="info-card" style="border-left-color: var(--accent-blue);">
-            <h2>🏥 體檢資料</h2>
+            <h2 data-i18n="info.medical_title">🏥 體檢資料</h2>
             <ul class="requirement-list">
-                <li>身份證正本，一吋相片 2 張，費用 150 元。</li>
-                <li>劉光雄醫院 / 岡山空軍醫院 / 新博愛診所。</li>
-                <li><strong style="color: red;">完成體檢後，請攜帶體檢表至現場報名</strong></li>
+                <li data-i18n="info.medical_1">身份證正本，一吋相片 2 張，費用 150 元。</li>
+                <li data-i18n="info.medical_2">劉光雄醫院 / 岡山空軍醫院 / 新博愛診所。</li>
+                <li data-i18n="info.medical_3"><strong style="color: red;">完成體檢後，請攜帶體檢表至現場報名</strong></li>
             </ul>
         </div>
 
         <div class="info-card" style="border-left-color: var(--primary-green);">
-            <h2>📄 繳回資料</h2>
+            <h2 data-i18n="info.doc_title">📄 繳回資料</h2>
             <ul class="requirement-list">
-                <li>體檢表，一吋相片 3 張。</li>
-                <li>身份證正反面影本一份。</li>
+                <li data-i18n="info.doc_1">體檢表，一吋相片 3 張。</li>
+                <li data-i18n="info.doc_2">身份證正反面影本一份。</li>
             </ul>
         </div>
 
         <div class="info-card" style="border-left-color: var(--accent-red);">
-            <h2>⚠️ 學員注意事項</h2>
+            <h2 data-i18n="info.notice_title">⚠️ 學員注意事項</h2>
             <ul class="requirement-list">
-                <li><strong>報名方式：</strong>僅接受現場報名。</li>
-                <li><strong>出席規定：</strong>曠課時數不得超過總上課時數的三分之一，否則將不得參加考照。</li>
-                <li><strong>服裝儀容：</strong>上課與考試時請勿穿著拖鞋或赤腳；女士請勿穿著高跟鞋。</li>
-                <li><strong>行為規範：</strong>場內嚴禁吸菸、嚼食檳榔，保持環境整潔。</li>
-                <li><strong>安全第一：</strong>請確實遵守教練指導，未經許可請勿擅自操作車輛。</li>
+                <li><strong data-i18n="info.notice_1_label">報名方式：</strong><span
+                        data-i18n="info.notice_1_value">僅接受現場報名。</span></li>
+                <li><strong data-i18n="info.notice_2_label">出席規定：</strong><span
+                        data-i18n="info.notice_2_value">曠課時數不得超過總上課時數的三分之一，否則將不得參加考照。</span></li>
+                <li><strong data-i18n="info.notice_3_label">服裝儀容：</strong><span
+                        data-i18n="info.notice_3_value">上課與考試時請勿穿著拖鞋或赤腳；女士請勿穿著高跟鞋。</span></li>
+                <li><strong data-i18n="info.notice_4_label">行為規範：</strong><span
+                        data-i18n="info.notice_4_value">場內嚴禁吸菸、嚼食檳榔，保持環境整潔。</span></li>
+                <li><strong data-i18n="info.notice_5_label">安全第一：</strong><span
+                        data-i18n="info.notice_5_value">請確實遵守教練指導，未經許可請勿擅自操作車輛。</span></li>
             </ul>
         </div>
 
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="contact.html" class="btn btn-primary">如有疑問，請聯絡我們</a>
+            <a href="contact.html" class="btn btn-primary" data-i18n="info.btn_contact">如有疑問，請聯絡我們</a>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -69,35 +69,36 @@
                 <span>同安</span>駕訓班
             </a>
             <button class="mobile-toggle">☰</button>
+            <a href="#" id="lang-switch" class="lang-switch">English</a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">首頁</a></li>
-                    <li><a href="about.html" class="nav-link">簡介與位置</a></li>
-                    <li><a href="facilities.html" class="nav-link">場地設施</a></li>
-                    <li><a href="info.html" class="nav-link">報名須知</a></li>
-                    <li><a href="schedule.html" class="nav-link active">課表查詢</a></li>
-                    <li><a href="activities.html" class="nav-link">活動花絮</a></li>
-                    <li><a href="resources.html" class="nav-link">相關資源</a></li>
-                    <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav.about">簡介與位置</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-i18n="nav.facilities">場地設施</a></li>
+                    <li><a href="info.html" class="nav-link" data-i18n="nav.info">報名須知</a></li>
+                    <li><a href="schedule.html" class="nav-link active" data-i18n="nav.schedule">課表查詢</a></li>
+                    <li><a href="activities.html" class="nav-link" data-i18n="nav.activities">活動花絮</a></li>
+                    <li><a href="resources.html" class="nav-link" data-i18n="nav.resources">相關資源</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">聯絡我們</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container section">
-        <h1 class="section-title">課程時間表</h1>
+        <h1 class="section-title" data-i18n="schedule.title">課程時間表</h1>
 
         <div style="margin-bottom: 2rem; text-align: center;">
-            <p>※ 實際開課日期請以現場公告或電話查詢為準。</p>
+            <p data-i18n="schedule.note">※ 實際開課日期請以現場公告或電話查詢為準。</p>
         </div>
 
-        <h3>📅 近期開課日期</h3>
+        <h3 data-i18n="schedule.recent_title">📅 近期開課日期</h3>
         <table class="schedule-table">
             <thead>
                 <tr>
-                    <th>期別</th>
-                    <th>開訓日期</th>
-                    <th>結訓日期</th>
+                    <th data-i18n="schedule.th_term">期別</th>
+                    <th data-i18n="schedule.th_start">開訓日期</th>
+                    <th data-i18n="schedule.th_end">結訓日期</th>
                 </tr>
             </thead>
             <tbody>
@@ -205,107 +206,108 @@
             </tbody>
         </table>
 
-        <h3>⏰ 每日上課時段</h3>
+        <h3 data-i18n="schedule.daily_title">⏰ 每日上課時段</h3>
         <table class="schedule-table">
             <thead>
                 <tr>
-                    <th>時段</th>
-                    <th>起訖時間</th>
+                    <th data-i18n="schedule.th_period">時段</th>
+                    <th data-i18n="schedule.th_time">起訖時間</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>早班 A</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> A</td>
                     <td>06:00 - 06:50</td>
                 </tr>
                 <tr>
-                    <td>早班 B</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> B</td>
                     <td>06:50 - 07:40</td>
                 </tr>
                 <tr>
-                    <td>早班 C</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> C</td>
                     <td>07:40 - 08:30</td>
                 </tr>
                 <tr>
-                    <td>早班 D</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> D</td>
                     <td>08:30 - 09:20</td>
                 </tr>
                 <tr>
-                    <td>早班 E</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> E</td>
                     <td>09:20 - 10:10</td>
                 </tr>
                 <tr>
-                    <td>早班 F</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> F</td>
                     <td>10:10 - 11:00</td>
                 </tr>
                 <tr>
-                    <td>早班 G</td>
+                    <td><span data-i18n="schedule.period_morning">早班</span> G</td>
                     <td>11:00 - 11:50</td>
                 </tr>
                 <tr>
-                    <td>午班 A</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> A</td>
                     <td>11:50 - 12:40</td>
                 </tr>
                 <tr>
-                    <td>午班 B</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> B</td>
                     <td>12:40 - 13:30</td>
                 </tr>
                 <tr>
-                    <td>午班 C</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> C</td>
                     <td>13:30 - 14:20</td>
                 </tr>
                 <tr>
-                    <td>午班 D</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> D</td>
                     <td>14:20 - 15:10</td>
                 </tr>
                 <tr>
-                    <td>午班 E</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> E</td>
                     <td>15:10 - 16:00</td>
                 </tr>
                 <tr>
-                    <td>午班 F</td>
+                    <td><span data-i18n="schedule.period_afternoon">午班</span> F</td>
                     <td>16:00 - 16:50</td>
                 </tr>
                 <tr>
-                    <td>晚班 A</td>
+                    <td><span data-i18n="schedule.period_evening">晚班</span> A</td>
                     <td>16:50 - 17:40</td>
                 </tr>
                 <tr>
-                    <td>晚班 B</td>
+                    <td><span data-i18n="schedule.period_evening">晚班</span> B</td>
                     <td>17:40 - 18:30</td>
                 </tr>
                 <tr>
-                    <td>晚班 C</td>
+                    <td><span data-i18n="schedule.period_evening">晚班</span> C</td>
                     <td>18:30 - 19:20</td>
                 </tr>
                 <tr>
-                    <td>晚班 D</td>
+                    <td><span data-i18n="schedule.period_evening">晚班</span> D</td>
                     <td>19:20 - 20:10</td>
                 </tr>
                 <tr>
-                    <td>晚班 E</td>
+                    <td><span data-i18n="schedule.period_evening">晚班</span> E</td>
                     <td>20:10 - 21:00</td>
                 </tr>
             </tbody>
         </table>
 
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="contact.html" class="btn btn-primary">聯絡資訊 / 現場報名</a>
+            <a href="contact.html" class="btn btn-primary" data-i18n="schedule.btn_enroll">聯絡資訊 / 現場報名</a>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
-                <h3>高雄市私立同安汽車駕駛人訓練班</h3>
-                <p>立案字號:駕訓班換字第00710號</p>
-                <p>電話：(07) 626-7678</p>
-                <p>地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
+                <h3 data-i18n="footer.school_name">高雄市私立同安汽車駕駛人訓練班</h3>
+                <p data-i18n="footer.license">立案字號：駕訓班換字第00710號</p>
+                <p data-i18n="footer.phone">電話：(07) 626-7678</p>
+                <p data-i18n="footer.address">地址：高雄市岡山區致遠路88號 (空軍官校後方)</p>
             </div>
-            <div class="copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
+            <div class="copyright" data-i18n="footer.copyright">&copy; 2026 同安駕訓班 All Rights Reserved.</div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 
