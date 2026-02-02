@@ -203,10 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
         select.className = 'lang-select'; // We will style this class
 
         const options = [
-            { value: 'zh', text: '繁體中文' },
-            { value: 'en', text: 'English' },
-            { value: 'vi', text: 'Tiếng Việt' },
-            { value: 'th', text: 'ไทย' }
+            { value: 'zh', text: '🇹🇼 繁體中文' },
+            { value: 'en', text: '🇺🇸 English' },
+            { value: 'vi', text: '🇻🇳 Tiếng Việt' },
+            { value: 'th', text: '🇹🇭 ไทย' }
         ];
 
         options.forEach(opt => {
