@@ -174,11 +174,23 @@ img {
   .lang-select {
     display: block;
     width: 100%;
-    margin: var(--spacing-md) 0 0 0;
-    text-align: center;
+    margin: var(--spacing-md) 0;
+    /* Add margin top/bottom */
+    text-align: left;
+    /* Align text left like other nav items */
     background-position: right 1rem top 50%;
+    padding: 0.75rem 1rem;
+    /* Match nav link padding ish */
+    border-color: var(--border-color);
+    /* Softer border in menu */
+  }
+
+  /* Reset margin-left from desktop style */
+  .lang-select {
+    margin-left: 0;
   }
 }
+
 
 /* Navigation */
 .nav-menu {
