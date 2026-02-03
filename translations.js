@@ -122,6 +122,8 @@ const translations = {
         "resources.btn_visit": "前往網站 <i class=\"fas fa-external-link-alt\"></i>",
         "resources.item2_title": "交通部公路局 - 筆試題庫",
         "resources.item2_desc": "提供豐富的交通安全宣導資訊、法規查詢與駕駛安全教材。",
+        "resources.item3_title": "車輛裝載",
+        "resources.item3_desc": "登入方法<br>信箱：身份證字號@komv.in<br>密碼：a00000000（小寫a+8個數字0）",
 
         // Contact Page
         "contact.title": "聯絡我們",
@@ -257,6 +259,8 @@ const translations = {
         "resources.btn_visit": "Visit Website <i class=\"fas fa-external-link-alt\"></i>",
         "resources.item2_title": "Highway Bureau - Question Bank",
         "resources.item2_desc": "Traffic safety information, regulations, and teaching materials.",
+        "resources.item3_title": "Vehicle Loading",
+        "resources.item3_desc": "Login Method<br>Email: ID_Number@komv.in<br>Password: a00000000 (lowercase a + 8 zeros)",
 
         // Contact Page
         "contact.title": "Contact Us",
@@ -392,6 +396,8 @@ const translations = {
         "resources.btn_visit": "Truy Cập Web <i class=\"fas fa-external-link-alt\"></i>",
         "resources.item2_title": "Ngân Hàng Câu Hỏi",
         "resources.item2_desc": "Thông tin an toàn giao thông, quy định và tài liệu giảng dạy.",
+        "resources.item3_title": "Xếp Hàng Hóa",
+        "resources.item3_desc": "Cách đăng nhập<br>Email: Số_CMND@komv.in<br>Mật khẩu: a00000000 (chữ a thường + 8 số 0)",
 
         // Contact Page
         "contact.title": "Liên Hệ",
@@ -527,6 +533,8 @@ const translations = {
         "resources.btn_visit": "ไปที่เว็บไซต์ <i class=\"fas fa-external-link-alt\"></i>",
         "resources.item2_title": "กรมทางหลวง - คลังข้อสอบ",
         "resources.item2_desc": "ข้อมูลความปลอดภัยจราจร กฎระเบียบ และสื่อการสอน",
+        "resources.item3_title": "การบรรทุกสินค้า",
+        "resources.item3_desc": "วิธีการเข้าสู่ระบบ<br>อีเมล: เลขบัตรประชาชน@komv.in<br>รหัสผ่าน: a00000000 (ตัว a เล็ก + เลข 0 แปดตัว)",
 
         // Contact Page
         "contact.title": "ติดต่อเรา",
